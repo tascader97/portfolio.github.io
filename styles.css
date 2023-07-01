@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+      transform: translateY(0);
+  }
+  40% {
+      transform: translateY(-10px);
+  }
+  60% {
+      transform: translateY(-5px);
+  }
+}
+
+.bounce-on-load {
+  animation: bounce 1.5s;
+}
+
+#projects {
+  padding-top: 300px;
+}
+.boba {
+  width: 900px;
+  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-left: 120px;
+}
+
+#theme-toggle{
+  padding: 10px 13px;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  
+}
+#theme-toggle:hover {
+  transform: scale(1.1);
+}
+ .arrow {
+  animation: bounce 1s infinite;
+ }
+
+.arrow:hover {transform: scale(1.1);
+  transition: all 0.3s ease;}
+
+#about {
+  padding-top: 200px;
+}
+/* dark mode styles for the button */
+#theme-toggle.dark-mode {
+  background-color: #f1f1f1;
+  color: #1b1b1b;
+}
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  background: url("https://images.unsplash.com/photo-1636728557326-5d78e0abfe13?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1828&q=80") no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+   min-height: 100vh;
+  
+  
+}
+
+.rounded{
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+
+.pointed{
+  width: 7px;
+  height: 7px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+.content-wrapper {
+  padding-bottom: 60px; /* adjust this value to the height of your footer */
+}
+
+.footer {
+  
+
+  width: 100%;
+}
+
+body.dark {
+  background-image: url("https://images.pexels.com/photos/7135037/pexels-photo-7135037.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  color: #ffffff;
+  background-color: #000000;
+}
+body.dark header {
+  background-color: transparent;
+}
+
+body.dark header nav ul li a,
+body.dark  a {
+  color: #ffffff;
+}
+
+
+header {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-weight: bold;
+  font-size: 18px;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nav-wrapper {
+  flex: 1; /* this will ensure the nav-wrapper takes up all available space */
+  display: flex;
+  justify-content: center;
+  padding-left: 67px;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+.theme-toggle-wrapper {
+  display: flex;
+  align-items: center; /* this will vertically center the theme toggle button */
+}
+
+#theme-toggle {
+  padding: 10px 13px;
+  border-radius: 7px;
+  border: none;
+  font-weight: bold;
+}
+
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+
+nav a:not(:hover) {
+  color: #fad6d6;
+}
+
+main {
+  padding: 2rem;
+}
+
+.hero-content {
+  padding-top: 95px;
+}
+
+#hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem;
+  text-align: left;
+  color: #fde7da;
+  width: 100%;
+}
+
+h1, h2 {
+  margin: 0;
+}
+.title-container {
+  padding-top: 100px;
+}
+.section {
+  padding-top: 300px;
+}
+.name{
+  font-size: 120px;
+  padding-top: 380px;
+  position: relative;
+}
+
+
+.name::before {
+  content: '';
+  display: block;
+  height: 100px; /* Or the height you need */
+  margin-top: -100px; /* Same as the height */
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.everything {
+  padding-bottom: 200px;
+}
+
+.title {
+  
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+}
+h1 {
+  font-size: 100px;
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+  margin-bottom: -19px;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 50px;
+  text-align: center;
+  letter-spacing: 2.5px;
+  margin-top: 8px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+
+}
+.heading {
+  font-size: 30px;
+  letter-spacing: 2.5px;
+  text-align: left;
+
+}
+.description {
+  padding: 50px; /* increased padding */
+width: 400px;
+height: 400px;
+background-color: none;
+border: 6px solid #fef3f3;
+text-align: center; /* centered the text */
+align-items: center;
+justify-content: center;
+border-radius: 7px;
+transition: all 0.3s ease-in-out;
+font-weight: bold;
+background: rgba(255, 255, 255, 0.1);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(1.4px);
+-webkit-backdrop-filter: blur(1.4px);
+border: 1px solid rgba(255, 255, 255, 0.19);
+}
+.description:hover {
+  box-shadow: 0 0 10px #ffffff; /* This will add a white glow around the box */
+  color: #ffffff; /* This changes the text color to white when hovered */
+  text-shadow: 1px 1px 1px 1px #ffffff; /* This adds a white glow around the text */
+  transform: scale(1.1); /* This enlarges the element to 110% of its original size */
+  transition: transform 0.3s ease; 
+}
+
+
+.box-container {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  align-items: center;
+  padding-bottom: 17px;
+  padding-top: 45px;
+  
+}
+
+.box {
+  display: flex; /* Added to align content */
+  padding: 50px;
+  width: 400px;
+  height: 250px;
+  align-items: center; /* Vertical alignment */
+  justify-content: center; /* Horizontal alignment */
+  border-radius: 16px;
+  transition: all 0.3s ease-in-out;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+}
+
+
+.tea {
+  max-width: 128%; /* Example: Set maximum width to 80% of the box */
+    max-height: 128%;
+    border-radius: 10px;
+}
+
+.box:hover {
+  box-shadow: 0 0 10px #ffffff; /* This will add a white glow around the box */
+  color: #ffffff; /* This changes the text color to white when hovered */
+  text-shadow: 1px 1px 1px 1px #ffffff; /* This adds a white glow around the text */
+  transform: scale(1.1); /* This enlarges the element to 110% of its original size */
+  transition: transform 0.3s ease; /* Optional: This makes the enlargement smooth */
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+  
+}
+
+@keyframes fadeIn {
+  100% {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h3 {
+  font-weight: bold;
+  text-align: center;
+  
+}
+
+body.dark {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+body.dark header {
+  background-color: transparent;
+}
+
+body.dark header nav ul li a,
+body.dark a {
+  color: #ffffff;
+}
+
+body.dark footer {
+  background-color: #000000;
+}
+.footer {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+}
+header nav ul li a {
+  font-family: 'Roboto Mono', monospace;
+
+
+}
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+
+.titles {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+p, .social-links {
+  margin-bottom: 10px;
+}
+
+.social-links li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.social-links li:last-child {
+  margin-right: 0;
+}
+
+.content {
+  flex-grow: 1;
+}
+
+h3.titles {
+  font-size: 30px;  /* Adjust the size as you need */
+  font-weight: bold;  /* Makes the font bolder */
+}
+.contact-form {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(1.4px);
+  -webkit-backdrop-filter: blur(1.4px);
+  border: 1px solid rgba(255, 255, 255, 0.19);
+  border-radius: 10px;
+}
+
+.input-container {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+}
+
+.input-field {
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+
+}
+
+#message {
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+  font-weight: bold;
+}
+#name {
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+  font-weight: bold;
+}
+#email {  
+  flex: 1;
+  margin: 0 10px;
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+  font-weight: bold;
+
+}
+#submit {
+
+  border-radius: 10px;
+  padding: 7px;
+  border: none;
+  font-weight: bold;
+  margin-left: 450px;
+  
+}
+.work {
+  text-align: left;
+  width: 450px;
+  padding-left: 75px;
+
+}
+
+.works {
+  text-align: left;
+  width: 450px;
+  padding-left: 30px;
+  border-left: #ffffff solid thick;
+}
+
+#title-below {
+  
+  font-size: 45px;
+ 
+}
